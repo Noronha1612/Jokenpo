@@ -5,21 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Jokenpô</title>
-    <link rel="stylesheet" href="estilojogo.css">
+    <link rel="stylesheet" media="screen and (max-width: 1920px)" href="estilojogo1920.css">
+    <link rel="stylesheet" media="screen and (max-width: 1366px)" href="estilojogo.css">
 </head>
 <body>
     <header><strong>Jokenpô</strong></header>
     <div id="content">
-    <div id='txtselect'>Selecione sua opção</div>
-    <div id='btns'>
-        <span class="btn" onclick="(escolha('Tesoura'), aparecer())"><span class="txt">tesoura</span></span>
-        <span class="btn" onclick="(escolha('Pedra'), aparecer())"><span class="txt">pedra</span></span>
-        <span class="btn" onclick="(escolha('Papel'), aparecer())"><span class="txt">papel</span></span>
-    </div>
+        <div id='txtselect'>Selecione sua opção</div>
+        <div id='btns'>
+            <span class="btn" onclick="escolha('Tesoura')"><span class="txt">tesoura</span></span>
+            <span class="btn" onclick="escolha('Pedra')"><span class="txt">pedra</span></span>
+            <span class="btn" onclick="escolha('Papel')"><span class="txt">papel</span></span>
+        </div>
     </div>
     <footer>
         &copy;NoronhaProductions
     </footer>
+    
     <script src="scriptjokenpo.js"></script>
 </body>
 </html>

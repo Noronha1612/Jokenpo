@@ -1,5 +1,8 @@
 function reiniciar() {
-    document.getElementById('content').innerHTML = `
+    document.getElementById('content').classList.add('ativo')
+    setTimeout(function() {
+        document.getElementById('content').classList.remove('ativo')
+        document.getElementById('content').innerHTML = `
     <div id='txtselect'>Selecione sua opção</div>
     <div id='btns'>
         <span class="btn" onclick="(escolha('Tesoura'), aparecer())"><span class="txt">tesoura</span></span>
@@ -7,6 +10,7 @@ function reiniciar() {
         <span class="btn" onclick="(escolha('Papel'), aparecer())"><span class="txt">papel</span></span>
     </div>
     `
+    }, 500)
 }
 
 function escolha(id) {
@@ -82,6 +86,9 @@ function jogo() {
 }
 
 function aparecer() {
+    document.getElementById('content').classList.add('ativo')
+    setTimeout(function() {
+    document.getElementById('content').classList.remove('ativo')
     document.getElementById('content').innerHTML = `
     <span class='tit' id="jo"></span>
     <span class='tit' id="ken"></span>
@@ -89,5 +96,5 @@ function aparecer() {
     setTimeout(function () { document.getElementById('jo').innerHTML = 'JO' }, 800)
     setTimeout(function () { document.getElementById('ken').innerHTML = 'KEN' }, 1600)
     setTimeout(function () { document.getElementById('po').innerHTML = 'PÔ' }, 2400)
-    setTimeout(function () { jogo() }, 3300)
+    setTimeout(function () { jogo() }, 3300)}, 500)
 }
