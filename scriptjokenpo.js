@@ -74,7 +74,7 @@ function jogo() {
     <div id='interface'>
         <div id='msg'>
             <p>Uuuuuuh</p>
-            <p>Deu empate... Tente denovo!</p>
+            <p>Deu empate... Tente de novo!</p>
         </div>
         <div id='divbfinal'>
             <input id="btnfinal" type="button" value="Jogar novamente" onclick="reiniciar()">
