@@ -6,10 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Jokenpô</title>
     <script src="jquery.js"></script>
-    <link rel="stylesheet" href="estilo1366.css">
+    <link rel="stylesheet" href="./css/estilo1366.css">
+    <link rel="stylesheet" href="./css/themes.css">
 </head>
 <body>
-    <div id="content">
+    <div id="content" class="red">
         <div id="itensjokenpo">
             <header>Jokenpô</header>
             <div id="itembox">
@@ -19,6 +20,14 @@
             </div>
             <footer>&copy;NoronhaProductions</footer>
         </div>
+    </div>
+    <div id="cores-box">
+        <ul>
+            <li class="red selected" onclick="trocarCor(1)"></li>
+            <li class="blue" onclick="trocarCor(2)"></li>
+            <li class="yellow" onclick="trocarCor(3)"></li>
+            <li class="green" onclick="trocarCor(4)"></li>
+        </ul>
     </div>
     <script src="script.js"></script>
 </body>

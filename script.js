@@ -127,3 +127,24 @@ function retornar() {
         $("#itensjokenpo").show(300)
     }, 300)
 }
+
+function trocarCor(cod) {
+    opcoes = {
+        1: 'red',
+        2: 'blue',
+        3: 'yellow',
+        4: 'green'
+    }
+
+    cor = opcoes[cod]
+
+    document.getElementById('content').className = cor
+
+    $(function(){
+        for( let x = 1; x <= 4; x++ ) {
+            if ( $(`.${opcoes[x]}`).hasClass('selected') ) $(`.${opcoes[x]}`).removeClass('selected')
+
+            if ( cod === x && !$(`.${opcoes[x]}`).hasClass('selected')) $(`.${opcoes[x]}`).addClass('selected')
+        }
+    })
+}

@@ -8,7 +8,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(125deg, #ff3f34, #ff7169,#ff3f34);
+    transition: .3s;
 }
 #content header {
     position: absolute;
@@ -123,16 +123,16 @@ body {
 }
 .winner {
     transition: .3s;
-    transform: translateY(38%);
-    background: #2ecc706c;
+    transform: translateY(34%);
+    background: #2ecc70;
 }
 .loser {
     transition: .3s;
-    transform: translateY(78%);
-    background: #d6303065;
+    transform: translateY(71%);
+    background: #d63030;
 }
 #opjog {
-    left: 4%;
+    left: 6.5%;
 }
 #opjog img {
     position: absolute;
@@ -154,7 +154,7 @@ body {
     height: 300px;
 }
 #opcomp {
-    right: 4%;
+    right: 6.5%;
 }
 #opcomp img {
     position: absolute;
@@ -191,13 +191,13 @@ body {
 #indentifiers #jogind {
     position: absolute;
     transform: translateX(-50%);
-    left: 15%;
+    left: 17.5%;
     top: 10%;
 }
 #indentifiers #compind {
     position: absolute;
     transform: translateX(50%);
-    right: 15%;
+    right: 17.5%;
     top: 10%;
 }
 #txtfinal {
