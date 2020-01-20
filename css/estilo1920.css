@@ -111,11 +111,11 @@ body {
     transform: rotate(45deg);
 }
 .items {
-    width: 300px;
-    height: 350px;
-    border-radius: 10px;
+    width: 400px;
+    height: 475px;
+    border-radius: 30px;
     position: absolute;
-    transform: translateY(-50%);
+    transform: translateY(-70%);
 }
 .draw {
     transform: translateY(54%);
@@ -132,14 +132,14 @@ body {
     background: #d63030;
 }
 #opjog {
-    left: 6.5%;
+    left: 7.5%;
 }
 #opjog img {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) rotate(37deg);
-    height: 210px;
+    height: 320px;
 }
 #imgbattle {
     left: 50%;
@@ -154,14 +154,14 @@ body {
     height: 300px;
 }
 #opcomp {
-    right: 6.5%;
+    right: 7.5%;
 }
 #opcomp img {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) rotate(-37deg);
-    height: 270px;
+    height: 320px;
 }
 .items .header {
     position: absolute;
@@ -169,21 +169,21 @@ body {
     left: 50%;
     transform: translateX(-50%);
     font-family: sans-serif;
-    font-size: 25pt;
+    font-size: 29pt;
     text-transform: capitalize;
 }
 #resultadobox {
-    width: 400px;
-    height: 250px;
+    width: 580px;
+    height: 325px;
     position: absolute;
-    bottom: 3%;
+    bottom: 6%;
     left: 50%;
     transform: translateX(-50%);
     border-radius: 30px;
     background: rgba(255, 255, 255, 0.5);
 }
 #jogind, #compind {
-    font-size: 25pt;
+    font-size: 29pt;
     font-family: sans-serif;
     font-weight: 600;
     color: #2f3640;
@@ -201,12 +201,12 @@ body {
     top: 10%;
 }
 #txtfinal {
-    font-size: 8.8pt;
+    font-size: 11.5pt;
     font-family: sans-serif;
     text-align: center;
 }
 #txtfinal h1 {
-    margin-bottom: 18px;
+    margin: 30px 0px;
 }
 #returnbtn {
     position: absolute;
