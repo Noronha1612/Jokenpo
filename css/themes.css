@@ -30,5 +30,5 @@
     background: #f6b93b;
 }
 .selected {
-    cursor: default !important;
+    pointer-events: none;
 }
