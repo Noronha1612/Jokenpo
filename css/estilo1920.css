@@ -1,0 +1,228 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+#content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: .3s;
+}
+#content header {
+    position: absolute;
+    top: 3%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 20px 35px;
+    background: rgba(0, 0, 0, .25);
+    border-radius: 18px;
+    font-family: monospace;
+    font-weight: 700;
+    font-size: 25pt;
+    color: wheat;
+}
+#content footer {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-style: italic;
+    font-size: 13pt;
+    color: wheat;
+    font-family: sans-serif;
+}
+#itembox {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    height: 60%;
+    border-radius: 30px;
+    box-shadow: 0px 15px 20px 30px rgb(0, 0, 0, .35);
+}
+#tesoura, #papel, #pedra {
+    cursor: pointer;
+    height: 100%;
+    background: rgb(255, 255, 255, .6);
+    transition: .3s;
+}
+#tesoura {
+    width: calc(33% - 3px);
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-right: 3px solid #000;
+}
+#pedra {
+    width: calc(34% - 3px);
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 33%;
+    border-right: 3px solid #000;
+}
+#papel {
+    width: 33%;
+    height: 100%;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    position: absolute;
+    top: 0;
+    left: 67%;
+    background: rgb(255, 255, 255, .6);
+}
+#tesoura:hover, #pedra:hover, #papel:hover {
+    background: rgb(255, 255, 255, .9);
+}
+#itembox img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 70%;
+}
+#jotxt div {
+    font-family: sans-serif;
+    font-size: 59pt;
+    font-weight: 600;
+    color: #2c3e50;
+}
+#jo {
+    position: absolute;
+    bottom: 30%;
+    left: 22%;
+    transform: rotate(35deg);
+}
+#ken {
+    position: absolute;
+    top: 38%;
+    left: 42%;
+    transform: rotate(-35deg);
+}
+#po {
+    position: absolute;
+    bottom: 38%;
+    left: 66%;
+    transform: rotate(45deg);
+}
+.items {
+    width: 400px;
+    height: 475px;
+    border-radius: 30px;
+    position: absolute;
+    transform: translateY(-70%);
+}
+.draw {
+    transform: translateY(54%);
+    background: rgb(255, 255, 255, .4);
+}
+.winner {
+    transition: .3s;
+    transform: translateY(34%);
+    background: #2ecc70;
+}
+.loser {
+    transition: .3s;
+    transform: translateY(71%);
+    background: #d63030;
+}
+#opjog {
+    left: 7.5%;
+}
+#opjog img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(37deg);
+    height: 320px;
+}
+#imgbattle {
+    left: 50%;
+    top: 40%;
+    transform: translateY(-80px) translate(-50%, -50%);
+}
+#imgbattle img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 300px;
+}
+#opcomp {
+    right: 7.5%;
+}
+#opcomp img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-37deg);
+    height: 320px;
+}
+.items .header {
+    position: absolute;
+    top: 3%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: sans-serif;
+    font-size: 29pt;
+    text-transform: capitalize;
+}
+#resultadobox {
+    width: 580px;
+    height: 325px;
+    position: absolute;
+    bottom: 6%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.5);
+}
+#jogind, #compind {
+    font-size: 29pt;
+    font-family: sans-serif;
+    font-weight: 600;
+    color: #2f3640;
+}
+#indentifiers #jogind {
+    position: absolute;
+    transform: translateX(-50%);
+    left: 17.5%;
+    top: 10%;
+}
+#indentifiers #compind {
+    position: absolute;
+    transform: translateX(50%);
+    right: 17.5%;
+    top: 10%;
+}
+#txtfinal {
+    font-size: 11.5pt;
+    font-family: sans-serif;
+    text-align: center;
+}
+#txtfinal h1 {
+    margin: 30px 0px;
+}
+#returnbtn {
+    position: absolute;
+    bottom: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 15px;
+    padding: 12px 25px;
+    border: 1.2px solid #2d3436;
+    background: #fdcb6e;
+    font-size: 15pt;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .3s;
+}
+#returnbtn:hover {
+    padding: 12px 45px;
+    background: #fcd48b;
+}
